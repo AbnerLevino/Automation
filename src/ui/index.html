@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equipment Inspector</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="window">
+    <header class="header">
+      <div class="title">Equipment Inspector</div>
+      <div class="subtitle">
+        Ferramenta de consulta. Mostro exatamente o que o Windows informa — não altero nada no seu sistema.
+      </div>
+    </header>
+
+    <div class="scroll" id="scroll">
+      <div class="chat" id="chat"></div>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <footer class="footer">
+      <button id="btn-printers">Impressoras</button>
+      <button id="btn-drivers">Drivers</button>
+      <button id="btn-computer">Computador</button>
+      <button id="btn-network">Rede</button>
+      <button id="btn-summary">Visão geral</button>
+      <button id="btn-export">Exportar JSON</button>
+    </footer>
+  </div>
+
+  <script src="engine.js"></script>
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

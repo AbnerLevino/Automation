@@ -1,0 +1,14 @@
+{
+  "name": "equipment-inspector",
+  "version": "0.1.0",
+  "description": "Ferramenta de consulta (somente leitura) sobre impressoras, drivers, computador e rede em máquinas Windows.",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
