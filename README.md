@@ -7,17 +7,6 @@ máquinas Windows, feita para apoiar o suporte técnico de equipamentos da Data 
 [Automaxio](https://github.com/AbnerLevino/Automaxio). Veja `docs/AUDITORIA-AUTOMAXIO.md` e
 `docs/ESPECIFICACAO.md` para o contexto completo das decisões de design.
 
-## O que esta ferramenta NUNCA faz
-
-- Instalar, atualizar ou remover drivers.
-- Reiniciar serviços.
-- Alterar registro, rede ou configuração de impressoras.
-- Executar qualquer comando administrativo de alteração.
-
-Todas as consultas usam apenas cmdlets de leitura do PowerShell (`Get-*`). A lista de consultas é
-fechada e fixa no código (`src/services/powershell.js`) — nada é montado a partir de entrada do
-usuário. Isso é verificado automaticamente em `tests/powershell.test.js`.
-
 ## Requisitos
 
 - Windows 10/11.
